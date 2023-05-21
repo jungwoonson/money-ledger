@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.header,
+.footer {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 20px;
+}
+
+.content {
+  padding: 20px; /* 내부 여백 추가 */
+  margin: 20px; /* 외부 여백 추가 */
+}
+
+.content table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+.content th,
+.content td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.content th {
+  background-color: #4caf50;
+  color: white;
+}
+
+td {
+  width: 5%;
+}
+td input {
+  width: 100%; /* td의 너비와 같게 설정 */
+  height: 100%; /* td의 높이와 같게 설정 */
+  box-sizing: border-box; /* 패딩과 테두리가 요소의 총 너비에 포함되도록 설정 */
+  border: none; /* 테두리 제거 */
+  outline: none; /* 포커스 테두리 제거 */
+}
+.first-column {
+  background-color: #f8f9fa;
+  color: #333;
+}
+.text,
+.editor {
+  display: block; /* span 요소를 블록 요소로 변경 */
+  width: 100%; /* 셀의 너비와 같게 설정 */
+  height: 100%; /* 셀의 높이와 같게 설정 */
+  box-sizing: border-box; /* padding과 border가 요소의 전체 크기에 포함되도록 설정 */
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 0 10px; /* 드롭다운 메뉴 사이의 간격을 주기 위해 추가 */
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
